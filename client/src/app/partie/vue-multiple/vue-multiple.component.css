@@ -1,0 +1,83 @@
+img{
+    max-width: 640px;
+    max-height:480px;
+    min-width: 640px;
+    min-height: 480px;
+    border-radius: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+canvas{
+    max-width: 640px;
+    max-height:480px;
+    min-width: 640px;
+    min-height: 480px;
+    border-radius: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.divL{
+    min-width: 680px;
+}
+
+.vue{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0d3652
+}
+
+.scene{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.title{
+    text-align: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: rgba(48, 46, 45, 1);
+}
+
+#StartButton{
+    background-color: rgb(43, 43, 43);
+    color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.chrono{
+    text-align: center;
+    font-size: 38px;
+}
+
+.card{
+    background-color: #f2eeee;
+}
+
+.not-allowed { cursor: not-allowed; }
+
+#header{
+    margin-bottom: 10px
+}
+
+.container-fluid{
+    margin-bottom: 60px;
+}
+
+#images{
+    margin-bottom: 0;
+}

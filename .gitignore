@@ -1,0 +1,19 @@
+#Directories and files to ignore
+*.idea
+*.vscode
+*.ini
+
+package-lock.json
+/server/out/*
+
+\.angulardoc\.json
+
+client/package\.json
+server/Images/image2.bmp
+server/Images/image1.bmp
+*.map
+client/yarn\.lock
+
+server/yarn\.lock
+
+node_modules

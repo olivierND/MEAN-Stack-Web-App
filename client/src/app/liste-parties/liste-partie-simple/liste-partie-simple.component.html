@@ -1,0 +1,71 @@
+<div *ngFor="let partieSimple of listeParties; let i = index">
+    <mat-card class='container-fluid' 
+    [class.mat-elevation-z6]="!partieSimple.isElevatedActive"
+    [class.mat-elevation-z10]="!!partieSimple.isElevatedActive"
+    (mouseenter)="partieSimple.isElevatedActive = !partieSimple.isElevatedActive"
+    (mouseleave)="partieSimple.isElevatedActive = !partieSimple.isElevatedActive">
+        <mat-card-header>
+                <div class=col-sm-7>
+                    <h2 class='topThreeHeaders text-center'>Top <img class='bronzeMedal' src="assets/bronze-medal.png"></h2>
+                </div>
+                <div class="col-sm-5 title">
+                    <span class='gameNameHeader titleFirstLetter'>{{getPremiereLettreTitre(partieSimple.nomPartie)|uppercase}}</span>
+                    <span class='gameNameHeader'>{{getTitreSansPremiereLettre(partieSimple.nomPartie)|lowercase}}</span>
+                </div>
+        </mat-card-header>
+        <div class='row'>
+            <div class="col-7">
+                <div class="row row-header">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <h2 class='headers'> Solo </h2>
+                    </div>
+                    <div class="col-5">
+                        <h2 class='headers'> 1v1 </h2> 
+                    </div>
+                    <div class="col-1"></div>
+                 </div>
+                 <div class="row temps carte"  *ngFor="let tempsSolo of partieSimple['_tempsSolo']; let j = index">
+                    <div class="col-1">
+                        <span class="badge badge-pill badge-danger">{{j+1}}</span>
+                    </div>
+                    <div class="card col-5" class="top3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                {{ getTempsDisplay(tempsSolo) }}
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                {{ tempsSolo.nom }}
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card col-5" class="top3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                {{ getTempsDisplay(partieSimple.tempsUnContreUn[j]) }}
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                {{ partieSimple.tempsUnContreUn[j].nom }}
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        <div class="col-5">
+            <img #image [src]="partieSimple.imageBlob" [id]="partieSimple.id" class="gameImage img-responsive mat-elevation-z6 center"
+                [class.mat-elevation-z6]="!partieSimple.isElevatedActive"
+                [class.mat-elevation-z10]="!!partieSimple.isElevatedActive">
+        </div> 
+        </div>
+        <div class="row">
+            <div class="col boutons d-flex flex-row bd-highlight justify-content-end">
+                <button class="p-2 bd-highlight" mat-button (click) = "onJouerOuReinitialiserClick(partieSimple.id)" class='mat-elevation-z6'> {{jouerOuReinitialiser}} </button>
+                <button class="p-2 bd-highlight" mat-button (click) = "onCreerOuSupprimerClick(partieSimple.id)" class='mat-elevation-z6' [ngClass] = "listePartieEnAttente.includes(partieSimple.id) ? 'joindre animated infinite rubberBand delay-2s' : ''"> 
+                    {{listePartieEnAttente.includes(partieSimple.id) ? joindreOuSupprimer : creerOuSupprimer}} 
+                </button>
+            </div>
+        </div>
+    </mat-card>  
+    <br>
+</div>

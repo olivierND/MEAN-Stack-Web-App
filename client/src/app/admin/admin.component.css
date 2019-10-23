@@ -1,0 +1,34 @@
+.adminPageHeader
+{
+    font-family: 'Handlee', cursive;
+    margin-top: 25px;
+}
+
+.adminPageContainer
+{
+    margin-left:2%;    
+    margin-right:2%; 
+}
+
+.adminToolbar
+{
+    border-radius:15px;
+    padding-left:3%;
+    padding-right:3%;
+    background-color:#747272;
+}
+
+.stickyToolbar
+{
+    position:sticky;
+    position: -webkit-sticky;
+    display:flex; 
+    top:2%;
+    z-index: 1000; 
+    margin-bottom: 2%;
+}
+
+.toolbarButtons
+{
+    margin-right:2%;
+}

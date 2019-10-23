@@ -1,0 +1,17 @@
+<mat-toolbar id="secondaire" [ngClass]="isAdminMode ? 'invisible' : ''"> 
+        <div class="username"> Bonjour <span class="uppercase">{{ this.joueur }}</span>! Commencez par choisir la partie à laquelle vous voulez jouer. </div>
+    </mat-toolbar>     
+<div class="gameListContainer container-fluid">
+    <div class="row">
+        <div class="col-xl-6 col-lg-12">
+            <h2 class='simpleAndMultipleGamesHeader'>Parties en mode point de vue simple</h2>
+            <hr>
+            <app-liste-partie-simple></app-liste-partie-simple>
+        </div>
+        <div class="col-xl-6 col-lg-12">
+            <h2 class='simpleAndMultipleGamesHeader'>Parties en mode points de vue multiples</h2>
+            <hr>
+            <app-liste-partie-multiple></app-liste-partie-multiple>
+       </div>
+    </div>
+</div>

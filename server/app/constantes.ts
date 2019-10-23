@@ -1,0 +1,62 @@
+export const IMAGES_DIRECTORY: string = "../Images";
+export const INSIDE_IMAGES_DIRECTORY: string = "../Images/";
+export const ERREUR_NOM_PRIS: string = "Le nom de la partie est déjà pris, veuillez réessayer.";
+export const ERREUR_SCENE: string = "La scène ne s'est pas générée correctement, veuillez réessayer.";
+export const ERREUR_DIFFERENCES: string = "Les deux images doivent avoir exactement 7 différences, veuillez réessayer.";
+export const ENDFILE: string = "END";
+export const NOUVELLE_DIFFERENCE: string = "DIFF";
+export const ERREUR_UNIQUE: string = "ValidationError";
+export const BMPIFF_PATH: string = "app/PartieSimple/bmpdiff/bmpdiff.py";
+export const GENMULTI_PATH: string = "app/genmulti/main.exe";
+export const HTTP_CREATED: number = 201;
+export const HTTP_NOT_IMPLEMENTED: number = 501;
+export const NBRE_PARTIES_MULTIJOUEUR: number = 2;
+export const SIMPLE: string = "/partieSimple/";
+
+export const URL_MONGO_DB: string = "mongodb://admin:admin1@ds239692.mlab.com:39692/log2990-05";
+export const DEUX_POINTS_TEMPS_FORMAT: string = ":";
+export const ZERO_STR_FORMAT: string = "0";
+export const STR_VIDE: string = "";
+export const VIRGULE_STR_FORMAT: string = ",";
+export const IMAGE_BLOB: string = "image/bmp";
+export const URL_SLASH_STR: string = "/";
+
+export const URL_PARTIE_SIMPLE_GET: string = "/getPartieSimpleEnAttente";
+export const URL_PARTIE_SIMPLE_ADD: string = "/addPartieSimpleEnAttente";
+export const URL_PARTIE_SIMPLE_DELETE: string = "/deletePartieSimpleEnAttente/:id";
+export const URL_PARTIE_SIMPLE_DIALOGUE: string = "/dialogAttenteSimpleFerme";
+export const URL_PARTIE_SIMPLE_MULTIJOUEUR_JOINDRE: string = "/joindrePartieMultijoueurSimple";
+export const URL_PARTIE_SIMPLE_MULTIJOUEUR_DIFF_TROUVEE: string = "/differenceTrouveeMultijoueurSimple";
+export const URL_PARTIE_SIMPLE_MULTIJOUEUR_PARTIE_TERMINEE: string = "/partieTermineeMultijoueurSimple";
+export const URL_PARTIE_SIMPLE_MULTIJOUEUR_ERREUR: string = "/erreurMultijoueurSimple";
+
+export const ROUTE_PARTIE_SIMPLE: string = "/partieSimple";
+export const ROUTE_PARTIE_SIMPLE_AJOUTER: string = "/ajouter";
+export const ROUTE_PARTIE_SIMPLE_ADD_TEMPS: string = "/addTempsPartieSimple/:id";
+export const ROUTE_PARTIE_SIMPLE_GET_LISTE: string = "/getListePartieSimple";
+export const ROUTE_PARTIE_SIMPLE_REINITIALISE: string = "/reinitialiseTemps/:id";
+export const ROUTE_PARTIE_SIMPLE_DELETE: string = "/delete/:id";
+export const ROUTE_PARTIE_SIMPLE_GET_BY_ID: string = "/getPartieSimple/:id";
+export const ROUTE_PARTIE_SIMPLE_GET_CHANNEL: string = "/getChannelIdSimple";
+export const ROUTE_PARTIE_SIMPLE_SUPPRIMER_CHANNEL: string = "/supprimerChannelIdSimple";
+export const ROUTE_PARTIE_SIMPLE_IMAGE_CHARGEES: string = "/partieSimpleChargee";
+
+export const URL_PARTIE_MULTIPLE_GET: string = "/getPartieMultipleEnAttente";
+export const URL_PARTIE_MULTIPLE_ADD: string = "/addPartieMultipleEnAttente";
+export const URL_PARTIE_MULTIPLE_DELETE: string = "/deletePartieMultipleEnAttente/:id";
+export const URL_PARTIE_MULTIPLE_DIALOGUE: string = "/dialogAttenteMultipleFerme";
+export const URL_PARTIE_MULTIPLE_MULTIJOUEUR_JOINDRE: string = "/joindrePartieMultijoueurMultiple";
+export const URL_PARTIE_MULTIPLE_MULTIJOUEUR_DIFF_TROUVEE: string = "/differenceTrouveeMultijoueurMultiple";
+export const URL_PARTIE_MULTIPLE_MULTIJOUEUR_PARTIE_TERMINEE: string = "/partieTermineeMultijoueurMultiple";
+export const URL_PARTIE_MULTIPLE_MULTIJOUEUR_ERREUR: string = "/erreurMultijoueurMultiple";
+
+export const ROUTE_PARTIE_MULTIPLE: string = "/partieMultiple";
+export const ROUTE_PARTIE_MULTIPLE_AJOUTER: string = "/ajouter";
+export const ROUTE_PARTIE_MULTIPLE_ADD_TEMPS: string = "/addTempsPartieMultiple/:id";
+export const ROUTE_PARTIE_MULTIPLE_GET_LISTE: string = "/getListePartieMultiple";
+export const ROUTE_PARTIE_MULTIPLE_REINITIALISE: string = "/reinitialiseTemps/:id";
+export const ROUTE_PARTIE_MULTIPLE_DELETE: string = "/delete/:id";
+export const ROUTE_PARTIE_MULTIPLE_GET_BY_ID: string = "/getPartieMultiple/:id";
+export const ROUTE_PARTIE_MULTIPLE__GET_CHANNEL: string = "/getChannelIdMultiple";
+export const ROUTE_PARTIE_MULTIPLE_SUPPRIMER_CHANNEL: string = "/supprimerChannelIdMultiple";
+export const ROUTE_PARTIE_MULTIPLE_IMAGE_CHARGEES: string = "/partieMultipleChargee";

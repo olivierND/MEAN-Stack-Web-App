@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+#primaire{
+    background: rgba(48, 46, 45, 1);
+    font-family: 'Handlee', cursive;
+}
+
+#login-box .logo .logo-caption {
+	font-family: 'Handlee', cursive;
+	color: white;
+	text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size:150%;
+    margin-left:15px;
+}
+#login-box .logo .tweak {
+    color: #dc3545;
+    cursor: pointer;
+}
+
+.filler{
+    flex: 1 1 auto;
+}
+
+.button-style{
+    color: white;
+    border:1px solid white;
+    margin-right: 10px;
+}
+
+.button-style:hover{
+    color: black;
+    background-color: #dc3545;
+    border:1px solid #dc3545;
+    margin-right: 10px;
+}
+
+.glyphicon-home{
+    padding: auto;
+}
+
+#icon{
+    min-width: 0;
+}
